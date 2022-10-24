@@ -11,7 +11,7 @@ First, the launch date of these kickstarters was analyzed. A pivot table was cre
 ![Theater_Outcomes_vs_Launch.png](https://github.com/bchillman/kickstarter-analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png)
 This graph shows how many successful, failed, and canceled kickstarters there were that were launched in each month. The year filter was not used, however, it could potentially be used to see if more recent Kickstarters followed the same trends that were seen across all years.
 ### Goal Analysis
-Second, the monetary goal of these kickstarters was analyzed. First, 12 buckets were made to sort the goal amounts into:
+Second, the monetary goal of these kickstarters was analyzed. First, 12 bins were made to sort the goal amounts into:
 1. Less than $1,000
 2. Between $1,000 and $4,999
 3. Between $5,000 and $9,999
@@ -24,12 +24,13 @@ Second, the monetary goal of these kickstarters was analyzed. First, 12 buckets 
 10. Between $40,000 and $44,999
 11. Between $45,000 and $49,999
 12. More than $50,000
-Then, the number of successful, failed, and canceled Kickstarters in each of these buckets was counted (making sure to only include Kickstarters in the subcategory of **Plays**), and the percentage of each of these outcomes was calculated for each bucket. These percentages were then graphed, as shown below:
----
+
+Then, the number of successful, failed, and canceled Kickstarters in each of these bins was counted (making sure to only include Kickstarters in the subcategory of **Plays**), and the percentage of each of these outcomes was calculated for each bin. These percentages were then graphed, as shown below:
+
 ![Outcomes_vs_Goal.png](https://github.com/bchillman/kickstarter-analysis/blob/main/Resources/Outcomes_vs_Goals.png)
 This gives us and Louise an idea of how changing the goal of a Kickstarter can affect the outcome of that Kickstarter.
 ### Challenges
-I only ran into one challenge while performing these analyses. This came in the analysis of the outcomes based on goals. While attempting to sort the data based on the buckets that were created, I incorrectly defined the limits of the buckets in my COUNTIFS function. I noticed as I was filling these cells, that there was a very small number of Kickstarters as I was getting to larger goals and that my subsequent graph was not going to look like the sample graph provided. After I filled all this data in, I checked the total number of Kickstarters that I was looking at and compared it to the total number of plays in the data. When I saw that I was missing about 15-20%, I went back and checked the limits I had used in my formulas and realized I was not including any Kickstarters that were exactly $1,000, $5,000, $10,000, etc. This was a fairly quick fix, and was easily checked to make sure it was fixed.
+I only ran into one challenge while performing these analyses. This came in the analysis of the outcomes based on goals. While attempting to sort the data based on the bins that were created, I incorrectly defined the limits of the bins in my COUNTIFS function. I noticed as I was filling these cells, that there was a very small number of Kickstarters as I was getting to larger goals and that my subsequent graph was not going to look like the sample graph provided. After I filled all this data in, I checked the total number of Kickstarters that I was looking at and compared it to the total number of plays in the data. When I saw that I was missing about 15-20%, I went back and checked the limits I had used in my formulas and realized I was not including any Kickstarters that were exactly $1,000, $5,000, $10,000, etc. This was a fairly quick fix, and was easily checked to make sure it was fixed.
 ## Results
 These analyses provide us with some interesting results for Louise to consider. First, looking at the **Launch Date Analysis**, the largest difference in success and failure comes in June. This combined with similar but not quite as outstanding success in other summer months suggests that interest for theater Kickstarters is highest in the summer. Conversely, in December, the number of successful and failed Kicksarters is almost the same. This suggests that there is lower interest in theater Kickstarters in the winter and Louise should be wary of launching her Kickstarter at that time of year.
 
